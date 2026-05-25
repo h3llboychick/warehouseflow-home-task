@@ -1,0 +1,37 @@
+.review-card {
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: #f5f8ef;
+  border: 1px solid #d9e7d4;
+}
+
+.alert-box {
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: #fff4e8;
+  border: 1px solid #efc28a;
+}
+
+.alert-box h3 {
+  margin-top: 0;
+}
+
+.table-pagination {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-pagination__meta {
+  font-size: 13px;
+  color: #4f6f52;
+  margin-right: 8px;
+}
+
+.login-panel {
+  max-width: 560px;
+}

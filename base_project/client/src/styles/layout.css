@@ -1,0 +1,84 @@
+.shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.shell--single {
+  grid-template-columns: 1fr;
+}
+
+.sidebar {
+  padding: 28px 20px;
+  border-right: 1px solid #cad8c5;
+  background: rgba(248, 251, 243, 0.96);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.brand p {
+  margin: 6px 0 0;
+  color: #4f6f52;
+}
+
+.brand__eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5f7a61;
+}
+
+.nav {
+  display: grid;
+  gap: 8px;
+  margin: 28px 0;
+}
+
+.nav__item {
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid #cbd9c3;
+  border-radius: 12px;
+  background: white;
+  color: #1f3b1f;
+  cursor: pointer;
+}
+
+.nav__item--active {
+  background: #31572c;
+  border-color: #31572c;
+  color: white;
+}
+
+.sidebar-user {
+  margin: 4px 0 10px;
+  font-size: 13px;
+  color: #4f6f52;
+}
+
+.workspace {
+  padding: 28px;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #cad8c5;
+  }
+}

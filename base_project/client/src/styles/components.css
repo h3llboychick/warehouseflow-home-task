@@ -1,0 +1,132 @@
+button,
+.sidebar__reset {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  background: #31572c;
+  color: white;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background: #6b7d6c;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #31572c;
+}
+
+.error-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #8f1d1d;
+}
+
+.content-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.panel {
+  padding: 18px;
+  border: 1px solid #8fb996;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 14px 30px rgba(19, 42, 19, 0.08);
+}
+
+.panel--hero {
+  padding: 24px;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin-top: 18px;
+}
+
+.metric-grid--compact {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.metric-card {
+  padding: 14px;
+  border-radius: 14px;
+  background: #f5f8ef;
+  border: 1px solid #d9e7d4;
+}
+
+.metric-card--alert {
+  background: #fff4e8;
+  border-color: #efc28a;
+}
+
+.metric-card__label {
+  display: block;
+  font-size: 13px;
+  color: #5f7a61;
+  margin-bottom: 4px;
+}
+
+.metric-card__value {
+  font-size: 28px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid #cad8c5;
+  border-radius: 12px;
+  background: white;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 11px 12px;
+  text-align: left;
+  border-bottom: 1px solid #d7e4d1;
+}
+
+.data-table th {
+  background: #eef5e8;
+}
+
+.empty-state {
+  color: #6b7d6c;
+}

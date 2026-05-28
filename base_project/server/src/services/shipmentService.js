@@ -27,7 +27,7 @@ export function createShipmentService({ pool, shipmentRepository, shipmentEntity
             break;
           }
 
-          const available = bin.on_hand_quantity;
+          const available = bin.on_hand_quantity - bin.reserved_quantity; // fix for bug 1: formula updated to match the correct calculation logic
           if (available <= 0) {
             continue;
           }

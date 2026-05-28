@@ -7,7 +7,7 @@ export async function searchBins(pool, filters) {
     params.push(`%${filters.sku}%`);
   }
 
-  if (filters.aisle !== undefined) {
+  if (filters.aisle) { // fix for bug 4: condition for aisle simplified (handling of null values moved to parsing function)
     clauses.push("aisle = ?");
     params.push(filters.aisle);
   }

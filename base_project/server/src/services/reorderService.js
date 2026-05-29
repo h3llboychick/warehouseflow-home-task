@@ -9,7 +9,7 @@ export function createReorderService({ pool, reorderRepository, reorderEntity })
   return {
     async getGroupedVendorSummary(page, pageSize) {
       const pagination = addPaginationOffset(page, pageSize);
-      const rows = await reorderRepository.findGroupedVendorSummaryFromLimitedRows(pool, pagination.page, pagination.pageSize);
+      const rows = await reorderRepository.findGroupedVendorSummary(pool, pagination.page, pagination.pageSize);
       return rows.map(reorderEntity.toVendorSummary);
     },
 

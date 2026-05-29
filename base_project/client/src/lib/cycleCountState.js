@@ -16,6 +16,6 @@ export function applyRecountResult(currentRows, updatedRow) {
 
   return {
     rows: nextRows,
-    totals: summarize(currentRows)
+    totals: summarize(nextRows) // fix for bug 4: summarization should be applied on the updated rows instead of currentRows
   };
 }
